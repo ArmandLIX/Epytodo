@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epytodo</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h1>📝 Epytodo</h1>
+  <button id="logout-btn" onclick="logout()">Logout</button>
+</header>
+
+<div id="login-page" class="page active">
+  <h2>Login</h2>
+  <div id="login-error" class="error"></div>
+  <input type="email" id="login-email" placeholder="Email" />
+  <input type="password" id="login-password" placeholder="Password" />
+  <button class="btn-primary" onclick="login()">Login</button>
+  <p class="switch">No account? <a onclick="showPage('register-page')">Register</a></p>
+</div>
+
+<div id="register-page" class="page">
+  <h2>Register</h2>
+  <div id="register-error" class="error"></div>
+  <input type="text" id="reg-firstname" placeholder="Firstname" />
+  <input type="text" id="reg-name" placeholder="Name" />
+  <input type="email" id="reg-email" placeholder="Email" />
+  <input type="password" id="reg-password" placeholder="Password" />
+  <button class="btn-primary" onclick="register()">Create account</button>
+  <p class="switch">Already have an account? <a onclick="showPage('login-page')">Login</a></p>
+</div>
+
+<div id="todos-page" class="page">
+  <h2>My todos</h2>
+  <div id="add-form">
+    <input type="text" id="new-title" placeholder="Title" />
+    <input type="text" id="new-desc" placeholder="Description" />
+    <input type="datetime-local" id="new-due" />
+    <select id="new-status">
+      <option value="not started">Not started</option>
+      <option value="todo">Todo</option>
+      <option value="in progress">In progress</option>
+      <option value="done">Done</option>
+    </select>
+    <button onclick="addTodo()">+ Add</button>
+  </div>
+  <div id="todo-list"></div>
+  <p id="empty-msg" style="display:none">No todos yet.</p>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+IF the port bug try to do:         killall node         or this:            fuser -k 3000/tcp
+To run do:                         npm run dev
+Database access:                 sudo mysql -u root -p 
+Connect to database:             USE epytodo;
+ACCES user:                      SELECT * FROM user;

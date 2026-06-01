@@ -1,0 +1,36 @@
+{
+  "name": "epytodo-api",
+  "version": "1.0.0",
+  "description": "API for the EpyTodo project",
+  "homepage": "https://github.com/EpitechPGE1-2025/G-WEB-200-BAR-2-1-epytodo-3#readme",
+  "bugs": {
+    "url": "https://github.com/EpitechPGE1-2025/G-WEB-200-BAR-2-1-epytodo-3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechPGE1-2025/G-WEB-200-BAR-2-1-epytodo-3.git"
+  },
+  "license": "ISC",
+  "author": "Armand Lixon, Ander Arteaga",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "@eslint/js": "^9.0.0",
+    "@types/jsonwebtoken": "^9.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.22.3"
+  }
+}
